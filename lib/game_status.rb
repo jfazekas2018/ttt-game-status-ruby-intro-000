@@ -21,7 +21,7 @@ def won?(board)
     pos2 = combination[1]
     pos3 = combination[2]
 
-    if(board[pos1] == "X" && board[pos2] == "X" && board[pos3] == "X")
+    if((board[pos1] == "X" && board[pos2] == "X" && board[pos3] == "X"))
       return combination
     end
   end
