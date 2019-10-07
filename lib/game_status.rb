@@ -24,6 +24,6 @@ def won?(board)
     if(board[pos1] == "X" && board[pos2] == "X" && board[pos3] == "X")
       return combination
     end
-    return nil
   end
+  return nil
 end
