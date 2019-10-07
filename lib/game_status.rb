@@ -40,3 +40,11 @@ end
 def over?(board)
   return draw?(board) || won?(board)
 end
+
+def winner(board)
+  combination = won?(board)
+
+  if(combination == nil){
+    return nil
+  }
+end
