@@ -14,3 +14,16 @@ WIN_COMBINATIONS = [
   [1,4,7],
   [2,5,8]
 ]
+
+def won?(board)
+  WIN_COMBINATIONS.each do |combination|
+    pos1 = combination[0]
+    pos2 = combination[1]
+    pos3 = combination[2]
+
+    if(board[pos1] == "X" && board[pos2] == "X" && board[pos3] == "X")
+      return combination
+    end
+    return nil
+  end
+end
